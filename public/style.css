@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #393E46;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo {
+    color: #FFF;
+    font-size: 20px;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas,
+.tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-mokepon {
+    font-size: 15px;
+    width: 230px;
+    height: 230px;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tarjeta-hipodogue {
+    background: #83BEDA;
+}
+
+#tarjeta-capipepo {
+    background: #99C35F;
+}
+
+#tarjeta-ratigueya {
+    background-color: #F47930;
+}
+
+#texto-hipodogue {
+    text-align: center;
+    background-color: #0E629E;
+    border-radius: 20px;
+}
+
+#texto-capipepo {
+    text-align: center;
+    background-color: #019267;
+    border-radius: 20px;
+}
+
+#texto-ratigueya {
+    text-align: center;
+    background-color: #DC5F00;
+    border-radius: 20px;
+}
+
+.tarjeta-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    background-color: #EB6440;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: center;
+    color: #000;
+}
+
+input {
+    display: none;
+}
+
+input:checked + #tarjeta-hipodogue{
+    background-color: #5D8BF4;
+}
+
+#ratigueya:checked + #tarjeta-ratigueya {
+    background-color: #5D8BF4;
+}
+
+#capipepo:checked + #tarjeta-capipepo {
+    background-color: #5D8BF4;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #83BEDA;
+    text-align: center;
+    width: 80px;
+    border-radius: 20px;
+    border-color: transparent;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#mensajes {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    width: 280px;
+    background-color: #EB6440;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border-radius: 20px;
+    border: transparent;
+    color: #000;
+}
+
+.ataques {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 712px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .seleccionar-ataque,
+    .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+    text-align: center;
+    width: 110px;
+    height: 40px;
+    background-color: #EB6440;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: center;
+    color: #000;
+    margin: 10px 0;
+}
+
+@media (max-width: 300px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
